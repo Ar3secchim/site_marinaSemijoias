@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Brand';
+  src: url('Brand.ttf') format('truetype'), url('Brand.otf') format('opentype');
+}
+
+:root {
+  font-size: 62.5%; /* 62.5 -> transforma 16px para 10 px como referência */
+  --brand-gold: hsla(44, 61%, 41%, 1);
+  --brand-gold-light: hsla(54, 57%, 84%, 1);
+  --brand-beige-light: hsla(41, 23%, 68%, 1);
+  --brand-rose: hsla(48, 8%, 88%, 1);
+  --brand: hsla(40, 10%, 94%, 1);
+
+  --paragraph: hsla(210, 9%, 31%, 1);
+  --heading: hsla();
+  
+  --nav-height: 7.2rem;
+}
+
