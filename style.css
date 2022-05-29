@@ -26,11 +26,10 @@ Body,
 html {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 html{
-  overflow-x: hidden;
+  overflow-behavior: scroll;
 }
 
 html li {
@@ -212,7 +211,7 @@ border-radius: 83px 80px 0px 0px;
   background-color:var(--brand-beige) ;
 
   width: 100%;
-  height: 270rem;
+  height: 287rem;
 
   display: block;
   position: absolute;
@@ -284,6 +283,7 @@ border-radius: 83px 80px 0px 0px;
 #about h1 {
   padding: 1.6rem 0rem 2.4rem 0rem;
 }
+
 #about h4{
   padding: 1.6rem 0rem 2.4rem 0rem;
   font-weight: 500;
@@ -293,28 +293,27 @@ border-radius: 83px 80px 0px 0px;
 
 #about .image_1 {
   position: relative;
-  left: -6rem;
+  left: -1rem;
 }
 #about .image_2 {
   position: relative;
-  left: 8rem;
-  top: -6rem;
+  left: 2rem;
 }
 #about .image_3 {
   position: relative;
-  left: -6rem;
-  top: -12rem;
+  left: -1rem;
 }
+
 #about .image_4 {
   position: relative;
-  left: 8rem;
-  top: -16rem;
+  left: 2rem;
 }
 
 #contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-top: 4rem;
   padding-bottom: 6rem;
 
   text-align: left;
