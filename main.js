@@ -1,4 +1,4 @@
-backToTop()
+window.addEventListener('scroll', backToTop)
 
 function backToTop() {
   if (scrollY > 250) {
