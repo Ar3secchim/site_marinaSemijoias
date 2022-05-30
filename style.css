@@ -17,8 +17,8 @@
   --brand: hsla(40, 10%, 94%, 1);
 
   --paragraph: rgb(51, 52, 53);
-  --brand-gold-dark: rgb(68, 54, 17);
-
+  --brand-gold-dark:  rgb(68, 54, 17);
+  
   --nav-height: 7.2rem;
 }
 /* config geral */
@@ -26,10 +26,6 @@ Body,
 html {
   width: 100%;
   height: 100%;
-}
-
-html {
-  overflow-behavior: scroll;
 }
 
 html li {
@@ -85,14 +81,14 @@ h6 {
 
   color: white;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration:none;
   font-size: 1.6rem;
 
   border: none;
   border-radius: 3rem;
 
   height: 5rem;
-  width: 26.3rem;
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -100,7 +96,7 @@ h6 {
 
   gap: 1rem;
 
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem auto;
   transition: background 200ms;
 }
@@ -110,19 +106,19 @@ h6 {
 }
 
 .wrapper {
-  width: 37.5rem;
+  width: min(50rem, 100%);
   margin: auto;
   padding-inline: 2.4rem;
 }
 
 /* === HEADER ================================ */
-.logo {
-  padding: 2rem;
+.logo{
+  padding:2rem;
 }
 
-.logo svg {
-  width: 30rem;
-  height: 5rem;
+.logo svg{
+  width:80%;
+  height:80%;
 }
 
 body main #home {
@@ -131,31 +127,23 @@ body main #home {
   align-items: center;
 }
 
-#home .wrapper {
-  width: 37.5rem;
-  margin: auto;
-  padding-inline: 2.4rem;
-  padding-top: 1rem;
-}
-
-#home .wrapper h1 {
+#home .wrapper h1{
   display: flex;
   align-items: center;
 
-  width: 33rem;
   height: 17rem;
   left: 2rem;
   top: 1rem;
 
   font-size: 2.5rem;
-  padding: 1rem;
+  padding:1rem;
   color: var(--paragraph);
-
-  background: #d9d9d9;
-  border-radius: 79px 79px 38px 29px;
+  
+  background: #D9D9D9;
+  border-radius: 79px 79px 29px 29px;
 }
 
-#home .wrapper h2 {
+#home .wrapper h2{
   font-weight: 700;
   font-size: 2.6rem;
   text-align: center;
@@ -163,18 +151,19 @@ body main #home {
 
   color: var(--brand-gold);
 
-  padding-bottom: 2rem;
+  padding-bottom:2rem;
 }
 
-#home .wrapper .principal {
-  width: 199px;
-  height: 254px;
+#home .wrapper .principal{
+width: 199px;
+height: 254px;
 
-  border-radius: 83px 80px 0px 0px;
+border-radius: 83px 80px 0px 0px;
 }
 
-#home .play {
-  height: 100%;
+#home .play{
+  width: 100%;
+  height: 80%;
   padding-top: 2rem;
 }
 
@@ -201,17 +190,17 @@ body main #home {
   background-color: var(--brand-rose);
 }
 
-.stats li {
+.stats li{
   padding: 1.5rem;
   color: var(--paragraph);
 }
 
 #services-container::before {
   content: '';
-  background-color: var(--brand-beige);
+  background-color:var(--brand-beige) ;
 
   width: 100%;
-  height: 287rem;
+  height: 272rem;
 
   display: block;
   position: absolute;
@@ -235,28 +224,28 @@ body main #home {
   text-align: center;
 }
 
-.services-section h3 {
+.services-section h3{
   padding: 2.5rem;
 }
 
-.services-section p {
+.services-section p{
   width: 24px;
   height: 24px;
 
   border-radius: 50%;
-  background-color: var(--brand-gold-light);
+  background-color:var(--brand-gold-light);
 
   text-align: center;
   font-weight: 700;
   color: var(--brand-gold);
 }
 
-.buttom-more {
+.buttom-more{
   background-color: var(--brand-gold);
 
   color: white;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration:none;
   font-size: 1.6rem;
 
   border: none;
@@ -284,7 +273,7 @@ body main #home {
   padding: 1.6rem 0rem 2.4rem 0rem;
 }
 
-#about h4 {
+#about h4{
   padding: 1.6rem 0rem 2.4rem 0rem;
   font-weight: 500;
   font-size: 1.8rem;
@@ -307,7 +296,7 @@ body main #home {
 #about .image_4 {
   position: relative;
   left: 2rem;
-}
+} 
 
 #contact {
   display: flex;
@@ -332,10 +321,10 @@ body main #home {
   padding-bottom: 1.6rem;
 }
 
-.local-icons path {
+.local-icons path{
   stroke: var(--brand-gold);
 }
-.local-icons a {
+.local-icons a{
   text-decoration: none;
   color: var(--paragraph);
 }
@@ -349,19 +338,16 @@ body main #home {
 
   border: none;
   border-radius: 3rem;
-
-  height: 5rem;
-  width: 26.3rem;
+  width:15rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   gap: 1rem;
-
-  padding: 2rem;
   margin: 3.2rem auto;
 }
+
 
 /* === FOOTER ================================ */
 footer {
@@ -371,6 +357,7 @@ footer {
 
   background-color: var(--brand-gold);
   height: 28.5rem;
+  width: 100%;
   padding: 6rem 0rem 2.6rem 2.6rem;
 }
 
@@ -386,30 +373,33 @@ footer div {
 
   gap: 2rem;
 
-  color: white;
+  color:white;
 }
 
 footer ul {
   display: flex;
-  gap: 3.2rem;
+  gap: 1rem;
 }
 
 /* BACK TO TOP*/
-#backToTopButton {
+#backToTopButton{
   position: fixed;
   bottom: 1rem;
-  right: 3rem;
+  right: 6rem;
 
   opacity: 0;
   visibility: hidden;
 
   transform: translateY(100%);
-  transition: 300ms;
+  transition: 200ms;
 }
 
 #backToTopButton.show {
   opacity: 1;
   visibility: visible;
-
   transform: translateY(0);
+}
+
+#backToTopButton svg circle{
+  fill: var(--brand-gold);
 }
