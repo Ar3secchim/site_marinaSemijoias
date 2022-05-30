@@ -17,8 +17,8 @@
   --brand: hsla(40, 10%, 94%, 1);
 
   --paragraph: rgb(51, 52, 53);
-  --brand-gold-dark:  rgb(68, 54, 17);
-  
+  --brand-gold-dark: rgb(68, 54, 17);
+
   --nav-height: 7.2rem;
 }
 /* config geral */
@@ -28,9 +28,9 @@ html {
   height: 100%;
 }
 
-html{
+/* html {
   overflow-behavior: scroll;
-}
+} */
 
 html li {
   list-style: none;
@@ -85,7 +85,7 @@ h6 {
 
   color: white;
   font-weight: 700;
-  text-decoration:none;
+  text-decoration: none;
   font-size: 1.6rem;
 
   border: none;
@@ -116,13 +116,13 @@ h6 {
 }
 
 /* === HEADER ================================ */
-.logo{
-  padding:2rem;
+.logo {
+  padding: 2rem;
 }
 
-.logo svg{
-  width:30rem;
-  height:5rem;
+.logo svg {
+  width: 30rem;
+  height: 5rem;
 }
 
 body main #home {
@@ -138,7 +138,7 @@ body main #home {
   padding-top: 1rem;
 }
 
-#home .wrapper h1{
+#home .wrapper h1 {
   display: flex;
   align-items: center;
 
@@ -148,14 +148,14 @@ body main #home {
   top: 1rem;
 
   font-size: 2.5rem;
-  padding:1rem;
+  padding: 1rem;
   color: var(--paragraph);
-  
-  background: #D9D9D9;
+
+  background: #d9d9d9;
   border-radius: 79px 79px 38px 29px;
 }
 
-#home .wrapper h2{
+#home .wrapper h2 {
   font-weight: 700;
   font-size: 2.6rem;
   text-align: center;
@@ -163,17 +163,17 @@ body main #home {
 
   color: var(--brand-gold);
 
-  padding-bottom:2rem;
+  padding-bottom: 2rem;
 }
 
-#home .wrapper .principal{
-width: 199px;
-height: 254px;
+#home .wrapper .principal {
+  width: 199px;
+  height: 254px;
 
-border-radius: 83px 80px 0px 0px;
+  border-radius: 83px 80px 0px 0px;
 }
 
-#home .play{
+#home .play {
   height: 100%;
   padding-top: 2rem;
 }
@@ -201,14 +201,14 @@ border-radius: 83px 80px 0px 0px;
   background-color: var(--brand-rose);
 }
 
-.stats li{
+.stats li {
   padding: 1.5rem;
   color: var(--paragraph);
 }
 
 #services-container::before {
   content: '';
-  background-color:var(--brand-beige) ;
+  background-color: var(--brand-beige);
 
   width: 100%;
   height: 287rem;
@@ -235,28 +235,28 @@ border-radius: 83px 80px 0px 0px;
   text-align: center;
 }
 
-.services-section h3{
+.services-section h3 {
   padding: 2.5rem;
 }
 
-.services-section p{
+.services-section p {
   width: 24px;
   height: 24px;
 
   border-radius: 50%;
-  background-color:var(--brand-gold-light);
+  background-color: var(--brand-gold-light);
 
   text-align: center;
   font-weight: 700;
   color: var(--brand-gold);
 }
 
-.buttom-more{
+.buttom-more {
   background-color: var(--brand-gold);
 
   color: white;
   font-weight: 700;
-  text-decoration:none;
+  text-decoration: none;
   font-size: 1.6rem;
 
   border: none;
@@ -284,7 +284,7 @@ border-radius: 83px 80px 0px 0px;
   padding: 1.6rem 0rem 2.4rem 0rem;
 }
 
-#about h4{
+#about h4 {
   padding: 1.6rem 0rem 2.4rem 0rem;
   font-weight: 500;
   font-size: 1.8rem;
@@ -332,10 +332,10 @@ border-radius: 83px 80px 0px 0px;
   padding-bottom: 1.6rem;
 }
 
-.local-icons path{
+.local-icons path {
   stroke: var(--brand-gold);
 }
-.local-icons a{
+.local-icons a {
   text-decoration: none;
   color: var(--paragraph);
 }
@@ -386,7 +386,7 @@ footer div {
 
   gap: 2rem;
 
-  color:white;
+  color: white;
 }
 
 footer ul {
@@ -395,19 +395,19 @@ footer ul {
 }
 
 /* BACK TO TOP*/
-#backToTopButton{
+#backToTopButton {
   position: fixed;
   bottom: 1rem;
   right: 3rem;
 
   opacity: 0;
-  visibility:hidden;
-  
+  visibility: hidden;
+
   transform: translateY(100%);
   transition: 300ms;
 }
 
-#backToTopButton.show{
+#backToTopButton.show {
   opacity: 1;
   visibility: visible;
 
