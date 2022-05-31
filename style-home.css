@@ -1,0 +1,140 @@
+:root {
+  font-size: 62.5%; /* 62.5 -> transforma 16px para 10 px como referência */
+  --brand-gold: hsla(44, 61%, 41%, 1);
+  --brand-gold-light: hsla(54, 57%, 84%, 1);
+  --brand-beige: hsla(41, 23%, 68%, 1);
+  --brand-rose: hsla(48, 8%, 88%, 1);
+  --brand: hsla(40, 10%, 94%, 1);
+
+  --paragraph: rgb(51, 52, 53);
+  --brand-gold-dark:  rgb(68, 54, 17);
+  
+  --nav-height: 7.2rem;
+}
+
+.service img{
+  width: 70%;
+}
+
+#services h1{
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--brand-gold);
+}
+
+#services-container::before {
+  content: '';
+  background-color:var(--brand-beige) ;
+
+  width: 100%;
+  height:130rem;
+
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 90rem;
+  left: 0;
+}
+
+#backToTopButton{
+  background-color: var(--brand-gold);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#contact img{
+  display:none;
+}
+
+#home .wrapper h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    height: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--paragraph);
+    background: #ffffff;
+}
+
+#home .wrapper h5{
+  display: flex;
+  font-size: 1.6rem;
+  padding-top: 2rem;
+}
+
+
+
+@media (min-width: 1024px) {
+  .play{
+    display:inline;
+  } 
+  #home .col-b .play {
+    width: 25rem;
+    height: 40rem;
+  } 
+  #services{
+    padding:2rem;
+  }
+  
+  #services h5{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--paragraph);
+    text-align: left;
+  
+    padding: 2rem;
+  }
+  #services img{
+    width:75%;
+  }
+  
+  .service{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "img text";
+  }
+  .service h3{
+    grid-area: title;
+  }
+  .service h5{
+    grid-area: text;
+  }
+  .service img{
+    grid-area: img;
+  }
+  
+  #services-container::before {
+    content: '';
+    background-color:var(--brand-beige) ;
+  
+    width: 100%;
+    height:118rem;
+  
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 87rem;
+    left: 0;
+  }
+
+  #home .wrapper h1{
+    height: 30%;
+    color: var(--paragraph);
+    background-color: #EDE8BE;
+  }
+
+  #contact img{
+    display: inline;
+  }
+}
