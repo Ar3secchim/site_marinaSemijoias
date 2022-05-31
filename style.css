@@ -209,8 +209,8 @@ body.menu-expanded {
 body nav .close-menu {
   position: absolute;
   bottom: 0;
-  top: -40rem;
-  right: 5rem;
+  top: -45rem;
+  right: 10rem;
   z-index: 300;
 }
 
@@ -218,7 +218,6 @@ body nav .close-menu {
 body.menu-expanded > :not(nav){
   display:none;
 }  */
-
 .menu,
 .close-menu,
 body.menu-expanded nav .open-menu {
@@ -409,12 +408,12 @@ border-radius: 83px 80px 0px 0px;
   background-color:var(--brand-beige) ;
 
   width: 100%;
-  height: 272rem;
+  height: 256rem;
 
   display: block;
   position: absolute;
   z-index: -1;
-  top: 95rem;
+  top: 115rem;
   left: 0;
 }
 
@@ -767,7 +766,7 @@ footer ul {
     background-color: #EDE8BE;
 
     width: 100%;
-    height: 80rem;
+    height:80rem;
 
     display: block;
     position: absolute;
@@ -892,6 +891,7 @@ footer ul {
     top: -75%;
     width: 30%;
   }
+  
 
   #about .image_4 img{
     position: relative;
