@@ -144,12 +144,20 @@
   justify-content:flex-start;
   }
 
-  #home .wrapper h2{
+  #home .wrapper .col-a  h2{
     display: flex;
     
     background-color: #EDE8BE;
     font-size:3rem;
     justify-content:flex-start;
+  }
+
+  #home .wrapper .col-c  h2{
+    display: flex;
+    
+    background-color: #EDE8BE;
+    font-size:3rem;
+    justify-content:center;
   }
 
   #contact img{
